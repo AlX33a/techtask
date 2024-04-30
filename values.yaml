@@ -1,0 +1,20 @@
+configOverrides:
+  secret: |
+    SECRET_KEY = 'YOUR_OWN_RANDOM_GENERATED_SECRET_KEY'
+
+service:
+  type: ClusterIP
+  port: 8088
+  annotations: {}
+  loadBalancerIP: ~
+  nodePort:
+    http: nil
+
+# ingress:
+#   enabled: true
+#   ingressClassName: ~
+#   annotations: {}
+#   path: /
+#   pathType: ImplementationSpecific
+#   hosts:
+#     - superset
