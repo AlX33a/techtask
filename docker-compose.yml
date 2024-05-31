@@ -5,7 +5,7 @@ services:
     image: gitlab/gitlab-ce:latest
     container_name: gitlab
     restart: always
-    hostname: gitlab.example.com
+    hostname: 82.97.242.15
     ports:
       - "80:80"
       - "443:443"
